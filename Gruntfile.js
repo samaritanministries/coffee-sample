@@ -20,6 +20,15 @@ module.exports = function (grunt) {
         dest: '.tmp/spec',
         ext: '.js'
       }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 8000,
+          protocol: 'https',
+          keepalive: true
+        }
+      }
     }
   });
 }

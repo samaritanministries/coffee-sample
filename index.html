@@ -1,0 +1,18 @@
+<head>
+</head>
+
+<body>
+  <h1>Hello!</h1>
+  <div data-id="identity"></div>
+</body>
+
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="bower_components/samaritan-js/samaritan-js.min.js"></script>
+<script src=".tmp/scripts/identity.js"></script>
+<script src=".tmp/scripts/show_view.js"></script>
+<script>
+  var view = new ShowView();
+  $('[data-id=identity]').html(view.render().el);
+</script>
